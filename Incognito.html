@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body {
+            background-color: #1a1a1a; 
+            color: white;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .column {
+            width: 45%;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+            font-size: 1.5em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: '•'; 
+            color: #ffffff;
+            padding-right: 10px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        .href:hover{
+            color: #e22525;
+           
+        }
+        button{
+            background-color: #1d1c1c;
+            text-align: left;
+            color: #f0f8ff;
+            padding: 10px;
+            
+       }
+       .switch {
+            position: relative;
+            display: inline-block;
+            width: 45px;
+            height: 30px;
+        }
+
+
+       .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 4px;
+            bottom: 4px;
+            background-color: #031cff;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #70a7d4;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <img src ="https://media.sketchfab.com/models/a64e7bbe2d544d66ade9e0d85d088ce2/thumbnails/96eabf9704d040319b4624c6fc0973d6/361f990d664844ba8f1ef532ef87e252.jpeg" width="250px"><br><br><br>
+    <h1><div>You've gone Incognito</div></h1><br><br>
+    <h4><div class="text"> Others who use this device won't see your activity, so you can browse more privately. This won't <br>change how data is collected by websites you
+     visit and the services they use, including Google. <br>
+     Downloads, bookmarks and reading list items will be saved. <a href="Lernmore">Lern more</a></div></h4><br>
+     </center>
+     
+     <center>
+        <div class="container">
+            
+            <div class="column">
+                <h4>Chrome won't save:</h4>
+                <ul>
+                    <li>Your browsing history</li>
+                    <li>Cookies and site data</li>
+                    <li>Information entered in forms</li>
+                </ul>
+            </div>
+    
+           
+            <div class="column">
+                <h4>Your activity might still be visible to:</h4>
+                <ul>
+                    <li>Websites you visit</li>
+                    <li>Your employer or school</li>
+                    <li>Your internet service provider</li>
+                </ul>
+            </div>
+        </div><br><br>
+     <button>
+        <h3>
+            Block third-party cookies <br>
+             When on, sites can't use cookies that track you across the web. Features on some &nbsp;&nbsp; 
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <br>sites may break.
+         </h3>
+    </button>
+    </center>
+    
+</body>
+</html>
